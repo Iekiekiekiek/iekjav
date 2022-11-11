@@ -5,6 +5,8 @@
 
 package com.mycompany.mavenproject2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -12,9 +14,36 @@ package com.mycompany.mavenproject2;
 public class Mavenproject2 {
 
     public static void main(String[] args) {
-        String name; tod the employee's name 
-        int age; //to hold the employee's age 
+        String name; // To hold the employee name
+        int age; // To hold the empolyee's age
         char gender; //To hold employee's gender
         double salary; // To hold employee's age
-        // create a scanner object to read input
+        // create a scanner object to read input.
+        Scanner console = new Scanner(System.in);
+        
+         // Get the employee's name
+        System.out.println("Enter name:");
+        name = console.nextLine();
+        
+        //Get the employee's age 
+        System.out.println("Enter age:");
+        age=console.nextInt();
+        
+        // Get the employee's gender
+        System.out.println("Enter gender:(F/M)");
+        gender = console.next().charAt(0);
+        
+        // Get the employee's salary
+        System.out.println("Enter salary:");
+        salary = console.nextDouble();
+        
+        // Display the information 
+        System.out.println(" Name:"+ name+ "age:" + age +"Gender:" + gender + "salary:" +salary);
+        
+        
+        
+        
+        
+        
+}
 }
